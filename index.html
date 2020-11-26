@@ -25,11 +25,11 @@
                 <div class="form-row">
                     <div class="form-group col-md-4">
                         <label for="inputEmail4">Card #</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Card">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="inputPassword4">CVC #</label>
-                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="CVC">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="validationDefaultUsername">Amount</label>
@@ -37,7 +37,7 @@
                                 <div class="input-group-prepend">
                                 <span class="input-group-text" id="inputGroupPrepend2">$</span>
                                 </div>
-                                <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+                                <input type="text" class="form-control" id="validationDefaultUsername" placeholder="" aria-describedby="inputGroupPrepend2" required>
                             </div>
                     </div>
                 </div>
@@ -67,31 +67,31 @@
                         <label for="inputZip">Postal Code</label>
                         <input type="text" class="form-control" id="inputZip">
                     </div>
-                </div>  
-                <div class="row">
-                    <div class="col-md-4 d-flex p-2 justify-content-start">
-                        <button type="button" class="btn btn-secondary">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="payment-op">We Accept:</label>
+                        <button type="button" class="btn btn-secondary form-control" id="payment-op">
                             <form action="/action_page.php">
                                 <input type="radio" id="mastercard" name="payment" value="male"> <i class="fab fa-cc-mastercard"></i>
                                 <input type="radio" id="visa" name="payment" value="female"> <i class="fab fa-cc-visa"></i>
                                 <input type="radio" id="paypal" name="payment" value="other"> <i class="fab fa-cc-paypal"></i>
-                                <input type="radio" id="amexpress" name="payment" value="other"> <i class="fab fa-cc-amex"></i>
+                                <input type="radio" id="amexpress" name="payment" value="other"> <i class="fab fa-cc-amex"></i> 
                             </form> 
-                        </button>    
+                        </button>
+                    </div>
+                    <div class="form-group col-md-3">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="Message">Message</label>
+                        <textarea name="message" rows="4" col="20" id="Message" class="form-control">  </textarea>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-6 d-flex p-2 justify-content-end">
-                        <textarea name="Text1" cols="73" rows="5"></textarea>
-                    </div>
-                </div>
-        </form>
-    </div>
-        <div class="card-footer">
-            <button type="button" class="btn btn-secondary btn-lg">Cancel</button>
-            <button type="button" class="btn btn-primary btn-lg">Send</button>
         </div>
-    </div>
+        <div class="card-footer">
+                <button type="button" class="btn btn-secondary btn-lg">Cancel</button>
+                <button type="button" class="btn btn-primary btn-lg">Send</button>
+        </div>
     </div>
     <!-- Main Container Start -->
 
